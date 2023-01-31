@@ -28,4 +28,19 @@ alter table chofer alter column estado varchar(2);
 exec sp_rename  'chofer.estado' ,'est' 
 /*modificar una nueva columna */
 
+/*Agregar un Nuevo FK*/
+	/*1.-Agregar un campo a la Tabla Viaje */
+	alter table viaje add codlocalidad int;
+	/*2.-Agregar un campo a la Tabla Viaje */
+	alter table viaje
+	add foreign key(codlocalidad) references localidad(codlocalidad);
+	
 
+/* Ver las bd de mi servidor */
+SELECT name, database_id, create_date  FROM sys.databases;
+/* Ver las tablas de la bd Activa */
+SELECT * FROM INFORMATION_SCHEMA.TABLES;
+/*la estructura de la tabla */
+exec sp_help viaje;
+
+select * from localidad;

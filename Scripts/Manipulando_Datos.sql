@@ -49,10 +49,10 @@ create table localidad(
  descripcion varchar(max))
 
  insert into localidad(nombre,descripcion) values('Los Flores',
- 'La sintaxis b�sica es: INSERT, nombre de tabla, lista de columnas, VALUES y, a 
- continuaci�n, una lista de los valores que se van a insertar. Los dos guiones dobles 
- antes de cada l�nea indican que la l�nea es un comentario y el compilador ignorar� el texto.
- En este caso, el comentario describe una variaci�n permitida de la sintaxis.');
+ 'La sintaxis basica es: INSERT, nombre de tabla, lista de columnas, VALUES y, a 
+ continuacion, una lista de los valores que se van a insertar. Los dos guiones dobles 
+ antes de cada linea indican que la linea es un comentario y el compilador ignorar el texto.
+ En este caso, el comentario describe una variacion permitida de la sintaxis.');
 
  delete from localidad;
  truncate table localidad;
@@ -75,3 +75,4 @@ UPDATE chofer
 delete from viaje where codviaje=200;
 /*Eliminar el Padre*/
 delete from chofer where nro_licencia=2459;
+
